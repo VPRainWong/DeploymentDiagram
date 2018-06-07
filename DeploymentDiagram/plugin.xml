@@ -1,0 +1,29 @@
+<plugin
+		id="com.vp.plugin.sample.deploymentdiagram"
+		name="Create Deployment Diagram"
+		description="Create Deployment Diagram via Open API"
+		provider="Visual Paradigm"
+		class="com.vp.plugin.sample.deploymentdiagram.DeploymentDiagramPlugin">
+	
+	<actionSets>
+		<actionSet id="com.vp.plugin.sample.deploymentdiagram.actionset1">
+			<toolbar
+					id="com.vp.plugin.sample.deploymentdiagram.actionset1.toolbar1"
+					orientation="north"
+					index="last"/>
+			
+			<action
+					id="com.vp.plugin.sample.deploymentdiagram.actionset1.DeploymentDiagramActionControl"
+					actionType="generalAction"
+					label="Create Deployment Diagram"
+					tooltip="Create Deployment Diagram via Open API"
+					style="normal"
+					icon="icons/deployment.png"
+					toolbarPath="com.vp.plugin.sample.deploymentdiagram.actionset1.toolbar1/#">
+				<actionController class="com.vp.plugin.sample.deploymentdiagram.actions.DeploymentDiagramActionControl"/>
+			</action>
+			
+		</actionSet>
+		
+	</actionSets>	
+</plugin>
